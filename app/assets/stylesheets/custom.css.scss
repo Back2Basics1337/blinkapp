@@ -2,7 +2,17 @@
 
 /* mixins, variables, etc. */
 
-$grayMediumLight: #eaeaea;
+$grayMediumLight: #100f0b;
+
+body{
+  position:  relative;
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  background-color: #00c300;//hsl(2, 57%, 40%);
+
+
+}
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -83,6 +93,7 @@ p {
 /* header */
 
 #logo {
+
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
@@ -108,7 +119,7 @@ footer {
   a {
     color: $gray;
     &:hover {
-      color: $grayDarker;
+      color: $white;
     }
   }
   small {
@@ -149,4 +160,18 @@ footer {
   z-index: 99999;
   cursor: pointer;
 }
+
 }
+
+.hero-unit{
+  background-color: #f5f5f5;
+  a{
+    text-decoration: none;
+    color: #a1a1a1 !important;
+    &:hover, active {
+      text-decoration: none;
+      color: #a1a1a1 !important;
+    }
+  }
+}
+

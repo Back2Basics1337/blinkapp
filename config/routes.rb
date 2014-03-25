@@ -1,5 +1,4 @@
 Blinkapp::Application.routes.draw do
-  resources :ideas
 
 resources :ideas
   resources :users
