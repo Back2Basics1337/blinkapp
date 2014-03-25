@@ -15,7 +15,7 @@ before do
   it { should respond_to(:password) }
   it { should respond_to(:password_confirmation) }
 
-  it { should be_valid 
+  it { should be_valid }
 
   describe "when email format is invalid" do
     it "should be invalid" do
