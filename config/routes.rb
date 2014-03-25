@@ -1,5 +1,7 @@
 Blinkapp::Application.routes.draw do
+  resources :ideas
 
+resources :ideas
   resources :users
   root  'staticpages#home'
   match '/signup',  to: 'users#new',            via: 'get'

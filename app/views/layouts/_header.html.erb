@@ -3,10 +3,12 @@
     <div class="container">
       <%= link_to "black ink", root_path, id: "logo" %>
       <nav>
-        <ul class="nav pull-right">
+        <ul class="nav pull-left">
           <li><%= link_to "Home",    root_path %></li>
           <li><%= link_to "News",    news_path %></li>
-          <li><%= link_to "Sign in", '#' %></li>
+          <li class="123"><a href="/ideas">Gallery</a></li>
+          <li><%= link_to 'Add picture', new_idea_path %></li>
+
         </ul>
       </nav>
     </div>
