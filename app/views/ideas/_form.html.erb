@@ -19,11 +19,18 @@
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
-  <div class="field">
-    <%= f.label :picture %><br>
+  <div id="test">
+    <div class="field">
     <%= f.file_field :picture %>
+    </div>
+    <button>Select a file</button>
+    <br/><br/>
+
+</div>
+  <div class="actions" >
+    <%= f.submit 'Upload', :class => 'sum' %>
   </div>
-  <div class="actions">
-    <%= f.submit 'Upload' %>
-  </div>
+
+
+
 <% end %>
