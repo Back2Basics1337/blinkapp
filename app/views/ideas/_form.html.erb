@@ -1,34 +1,35 @@
 <%= form_for @idea, :html => {:multipart => true} do |f| %>
-  <% if @idea.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@idea.errors.count, "error") %> prohibited this idea from being saved:</h2>
+<% if @idea.errors.any? %>
+<div id="error_explanation">
+<h2><%= pluralize(@idea.errors.count, "error") %> prohibited this idea from being saved:</h2>
 
-      <ul>
-      <% @idea.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<ul>
+<% @idea.errors.full_messages.each do |msg| %>
+<li><%= msg %></li>
+<% end %>
+</ul>
+</div>
+<% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
-  </div>
-  
-    <div class="choose_file">
-        <span>Choose File</span>
-        <input name="Select File" type="file" />
-    </div>
+<div class="field">
+<%= f.label :name %><br>
+<%= f.text_field :name %>
+</div>
+<div class="field">
+<%= f.label :description %><br>
+<%= f.text_area :description %>
+</div>
 
-    <br> </br>
+<div class="field">
+<%= f.label :picture %><br>
+<%= f.button :picture, :class => "btn btn-large btn-primary ",id:"btn3" %>
+</div>
 <div class="actions">
-    <%= f.submit 'upload', class: 'btn btn-success btn-large', id:"btn1" %>
- </div>
-
+<%= f.submit 'upload', class: 'btn btn-success btn-large', id:"btn1" %>
+</div>
+<div class="choose_file">
+<span>Choose File</span>
+<input name="Select File" type="file" />
+</div>
 
 <% end %>
