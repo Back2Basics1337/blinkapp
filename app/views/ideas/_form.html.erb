@@ -20,16 +20,16 @@
 <%= f.text_area :description %>
 </div>
 
-<div class="field">
+<div class="choose_file">
 <%= f.label :picture %><br>
-<%= f.button :picture, :class => "btn btn-large btn-primary ",id:"btn3" %>
+<%= f.file_field :picture, :class => "btn btn-large btn-primary ",id:"btn3" %>
 </div>
 <div class="actions">
 <%= f.submit 'upload', class: 'btn btn-success btn-large', id:"btn1" %>
 </div>
 <div class="choose_file">
-<span>Choose File</span>
-<input name="Select File" type="file" />
+<span>Выберите файл</span>
+<input name="" type="file" />
 </div>
 
 <% end %>
