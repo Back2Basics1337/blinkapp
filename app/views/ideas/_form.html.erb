@@ -20,13 +20,10 @@
 <%= f.text_area :description %>
 </div>
 
-<div class="choose_file">
-<%= f.label :picture %><br>
-<%= f.file_field :picture, :class => "btn btn-success btn-large ",id:"btn3" %>
-</div>
-<br> </br>
+<div class="file_button_container"><input type="file" /></div>
+
 <div class="actions">
-<%= f.submit 'upload', class: 'btn btn-success btn-large', id:"btn1" %>
+<%= f.submit 'upload',  id:"btn1" %>
 </div>
 
 <% end %>

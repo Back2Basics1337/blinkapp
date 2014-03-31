@@ -184,41 +184,36 @@ footer {
 
 
   
+  
 #btn1 {
-   background-color: #ccc;
+    background-color:#00BFFF;
     border: none;
-    color: #222;
+    color: black;
     padding: 3px 5px;
     border-radius: 5px;
     position: relative;
     top: 0;
     z-index: 1;
-
 }
 
-btn1:hover {
+#btn1:hover {
+color: #00BFFF;
 text-decoration: underline;
+ color: white;
 }
 
-
-.choose_file{
-    position:relative;
-   text-align: center;
-   border-radius:8px;
-    border:#ebebeb solid 1px;
-    width:78px; 
-    padding: 4px 6px 4px 8px;
-    font: normal 14px Myriad Pro, Verdana, Geneva, sans-serif;
-    color: black;
-    margin-left: 2px;
-     text-align: middle;
-  background:green
-}
-.choose_file input[type="file"]{
-    -webkit-appearance:none; 
-    position:absolute;
-    top:0; left:0;
-    opacity:0; 
-}
 
   
+  .file_button_container,
+  .file_button_container input {
+       height: 47px;
+       width: 263px;
+   }
+
+   .file_button_container {
+       background: transparent url(http://cs606730.vk.me/v606730133/44c6/glSUPhVyOX0.jpg) left top no-repeat;
+   }
+
+   .file_button_container input {
+       opacity: 0;
+   }
