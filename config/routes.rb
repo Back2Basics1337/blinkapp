@@ -7,4 +7,5 @@ resources :ideas
   match '/news',    to: 'staticpages#news',    via: 'get'
   match '/about',   to: 'staticpages#about',   via: 'get'
   match '/contact', to: 'staticpages#contact', via: 'get'
-end
+    match '/help',    to: 'staticpages#help',    via: 'get
+'end
