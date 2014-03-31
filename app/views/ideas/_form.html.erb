@@ -22,14 +22,11 @@
 
 <div class="choose_file">
 <%= f.label :picture %><br>
-<%= f.file_field :picture, :class => "btn btn-large btn-primary ",id:"btn3" %>
+<%= f.file_field :picture, :class => "btn btn-success btn-large ",id:"btn3" %>
 </div>
+<br> </br>
 <div class="actions">
 <%= f.submit 'upload', class: 'btn btn-success btn-large', id:"btn1" %>
-</div>
-<div class="choose_file">
-<span>Выберите файл</span>
-<input name="" type="file" />
 </div>
 
 <% end %>

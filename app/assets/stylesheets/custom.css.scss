@@ -184,27 +184,35 @@ footer {
 
 
   
-#btn1 {color:gold;
-  text-decoration: none;
+#btn1 {
+   background-color: #ccc;
+    border: none;
+    color: #222;
+    padding: 3px 5px;
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+    z-index: 1;
+
 }
 
 btn1:hover {
-color: gold;
 text-decoration: underline;
 }
 
 
 .choose_file{
     position:relative;
-    display:inline-block;    
-  border-radius:8px;
+   text-align: center;
+   border-radius:8px;
     border:#ebebeb solid 1px;
-    width:250px; 
+    width:78px; 
     padding: 4px 6px 4px 8px;
     font: normal 14px Myriad Pro, Verdana, Geneva, sans-serif;
-    color: #7f7f7f;
-    margin-top: 2px;
-  background:gold
+    color: black;
+    margin-left: 2px;
+     text-align: middle;
+  background:green
 }
 .choose_file input[type="file"]{
     -webkit-appearance:none; 
@@ -214,21 +222,3 @@ text-decoration: underline;
 }
 
   
-.choose_file{
-position:relative;
-display:inline-block;
-border-radius:8px;
-border:#ebebeb solid 1px;
-width:250px;
-padding: 4px 6px 4px 8px;
-font: normal 14px Myriad Pro, Verdana, Geneva, sans-serif;
-color: #7f7f7f;
-margin-top: 2px;
-background:gold;
-}
-.choose_file input[type="file"]{
--webkit-appearance:none;
-position:absolute;
-top:0; left:0;
-opacity:0;
-}
