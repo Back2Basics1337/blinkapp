@@ -1,18 +1,28 @@
-<html>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="неофициальный сайт Black Ink">
-<meta name="author" content="B2B">
-<meta name="keywords" content="Black ink">
-
-<div class="center   hero-unit">
+<html class="no-js" lang="en">
+  <head>
+        <meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="description" content="неофициальный сайт Black Ink">
+		<meta name="author" content="B2B">
+		<meta name="keywords" content="Black ink">
+		<link rel="stylesheet" href="css/foundation.css" />
+   		 <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+      <div class="row">
+      <div class="large-12 columns">
+	<div class="center   hero-unit">
 	<%= link_to image_tag("http://blackink.bleank.com/images/BlackInk_AdvancedDigitalPainting.jpg", alt: "Rails"), 'http://blackink.bleank.com/' %>
- 
+	<h1><%= link_to "More about Black Ink.", about_path %></h1>
+	<%= link_to "Download now!", 'http://www.bleank.com/BlackInk-a115.html', class: "btn btn-large btn-primary"  %>
+	</div>
+      </div>
+      </div>
 
-<h1><%= link_to "More about Black Ink.", about_path %></h1>
-
-<%= link_to "Download now!", 'http://www.bleank.com/BlackInk-a115.html', class: "btn btn-large btn-primary"  %>
-    
-</div>
-
-
+<script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
 </html>

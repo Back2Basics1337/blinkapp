@@ -1,63 +1,118 @@
-<html>
+<html class="no-js" lang="en">
+  <head>
+        <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="неофициальный сайт Black Ink">
 <meta name="author" content="B2B">
 <meta name="keywords" content="Black ink">
+<link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
 
-<% provide(:title, 'More about Black Ink') %>
+
+     
 <div class="center hero-unit">
-<div style=" position:relative; left: 10px;">
-<img src=http://www.bleank.com/media-image-109.jpg?h=158&w=319 alt="Alternative text" title="Image!" />
-</div>
+  <div style=" position:relative; left: 10px;">
 
+   
 
+        </div>
 
-<h2>The Version 0.161.1686 is now available</h2>
+          <p>20 feb 2014 </p>
 
-<p>Long time since the last update. Due mainly to lot of personal duty for the team members.</p>
-<p>Anyway this version mainly introduces more complex layer operations (which is the most requested features from the community).</p>
+          <h2>Black Ink 0.161.1686</h2>
 
-<p>Please note that this is the last release before a discount update which will occur in one week from this post. So if you are still undecided for Black Ink make your decision before the end of the next week, or it will cost you few more bucks ;)</p>
+           <div class="row">
+              <div class="large-8 columns">
+                  <p>Long time since the last update. Due mainly to lot of personal duty for the team members.</p>
+                   <p>Anyway this version mainly introduces more complex layer operations (which is the most requested features from the community).</p>
 
-<p>Many thanks to all the users who already purchased Black Ink! The community grows brb every day and we are really amazed by your great feedback on our product.</p>
+                   <p>Please note that this is the last release before a discount update which will occur in one week from this post. So if you are still undecided for Black Ink make your decision before the end of the next week, or it will cost you few more bucks ;)</p>
 
-<h3>Now here the list of changes :</h3>
-<h4>
-<ul>
-  <li>New User can now use the .JPG image format in Black Ink for saving and loading.</li>
-  <li>New Command Menu for each layer (in the upper left of the layer thumbnail) :</li>
-  <li>Duplicate Layer</li>
-  <li>Fill - Fill the layer with the given solid color</li>
-  <li>Transform - Transform the whole layer</li>
-  <li>Merge Down - Merge down the layer</li>
-  <li>Merge Visible - Merge all visible layers</li>
-  <li>Merge All - Merge All layers into a flattened image</li>
-  <li>Export Image - Export the layer as an image</li>
-  <li>Import Image - Import an image in the layer</li>
-  <li>New You can Drop an image file from the Window Explorer to open it. If it’s a .BKD it will open the document but if it’s another file format( .JPG, .PNG ) it will import it in the current selected layer.</li>
-  <li>New T shortcut ( Transform the current selected layer ).</li>
-  <li>New “General Shortcuts” section added in the Toolbar.</li>
-  <li>New “Transform” section added in the Toolbar.</li>
-  <li>New Transform Editor ( invoked when user starts a Transform operation )</li>
-  <li>You can set the opacity of the current transformed object before applying the transformation</li>
-  <li>Center the transformed object</li>
-  <li>Tile the transformed object thought the entire canvas</li>
-  <li>Fit the transformed object thought the entire canvas</li>
-  <li>Fill the canvas with transformed object content</li>
-  <li>Flip the Transformed object Horizontally or vertically</li>
-  <li>Reset the Transformed aspect ratio back to its original size</li>
-  <li>Fixed The Eraser function of stylus is not recognised on new Intuos PRO ( issue )</li>
-  <li>Fixed Impossible to Pin the Black Ink.exe in the TaskBar ( issue )</li>
-  <li>Fixed Problem when resizing the application window with the controller panel opened ( issue )</li>
-  <li>Fixed Crash when using the stylus Eraser when brushing with the mouse. </li>
-  <li>Fixed Crash when switching to the stylus Eraser when editing some Controller parameter</li>
-  <li>Fixed Crash when selecting the Crepe Default Brush, editing the 2nd color and drag&dropping one of the color-markers away (to remove it)</li>
-  <li>Fixed Brush Preview flooding when Dragging out controller block from a slot without destroying it. A Preview was created each time the user start to draw while it was unnecessary.</li>
-  <li>Fixed Black Ink Window is correctly placed when Maximized with a Task bar pinned on the left, right or top of the desktop ( issue )</li>
-  <li>An Empty= Layer is created above the default white Background when the New command is invoked (request)</li>
-  <li>The Shortcut Esc that sometimes close Black Ink has been removed.</li>
-  </ul>
-</h4>
-
-</div>
+                   <p>Many thanks to all the users who already purchased Black Ink! The community grows brb every day and we are really amazed by your great feedback on our product.</p>
+              </div>
+               <div class="large-4 columns">
+              <%= image_tag("https://trello-attachments.s3.amazonaws.com/50bf3f4076a627ab3200a072/511268ae8a42fd2b2c0099d5/31a06c558410eb3763389b547a73c429/LayerMenus_resize.jpg") %>
+              <p>The new layer menu</p>
+                <%= image_tag("https://trello-attachments.s3.amazonaws.com/50bf3f4076a627ab3200a072/511268ae8a42fd2b2c0099d5/2e91cb286043649c3aa12c9533570d47/Transform_resize.jpg") %>
+                 <p>New Transform gizmo</p>
+              </div>
+              </div>
+              <h4>list of changes :</h4>
+              <h4>
+              <ul>
+              <li>New User can now use the .JPG image format in Black Ink for saving and loading.</li>
+              <li>New Command Menu for each layer (in the upper left of the layer thumbnail) :</li>
+              <li>Duplicate Layer</li>
+              <li>Fill - Fill the layer with the given solid color</li>
+              <li>Transform - Transform the whole layer</li>
+              <li>Merge Down - Merge down the layer</li>
+              <li>Merge Visible - Merge all visible layers</li>
+              <li>Merge All - Merge All layers into a flattened image</li>
+              <li>Export Image - Export the layer as an image</li>
+              <li>Import Image - Import an image in the layer</li>
+              <li>New You can Drop an image file from the Window Explorer to open it. If it’s a .BKD it will open the document but if it’s another file format( .JPG, .PNG ) it will import it in the current selected layer.</li>
+              <li>New T shortcut ( Transform the current selected layer ).</li>
+              <li>New “General Shortcuts” section added in the Toolbar.</li>
+              <li>New “Transform” section added in the Toolbar.</li>
+              <li>New Transform Editor ( invoked when user starts a Transform operation )</li>
+              <li>You can set the opacity of the current transformed object before applying the transformation</li>
+              <li>Center the transformed object</li>
+              <li>Tile the transformed object thought the entire canvas</li>
+              <li>Fit the transformed object thought the entire canvas</li>
+              <li>Fill the canvas with transformed object content</li>
+              <li>Flip the Transformed object Horizontally or vertically</li>
+              <li>Reset the Transformed aspect ratio back to its original size</li>
+              <li>Fixed The Eraser function of stylus is not recognised on new Intuos PRO ( issue )</li>
+              <li>Fixed Impossible to Pin the Black Ink.exe in the TaskBar ( issue )</li>
+              <li>Fixed Problem when resizing the application window with the controller panel opened ( issue )</li>
+              <li>Fixed Crash when using the stylus Eraser when brushing with the mouse. </li>
+              <li>Fixed Crash when switching to the stylus Eraser when editing some Controller parameter</li>
+              <li>Fixed Crash when selecting the Crepe Default Brush, editing the 2nd color and drag&dropping one of the color-markers away (to remove it)</li>
+              <li>Fixed Brush Preview flooding when Dragging out controller block from a slot without destroying it. A Preview was created each time the user start to draw while it was unnecessary.</li>
+              <li>Fixed Black Ink Window is correctly placed when Maximized with a Task bar pinned on the left, right or top of the desktop ( issue )</li>
+              <li>An Empty= Layer is created above the default white Background when the New command is invoked (request)</li>
+              <li>The Shortcut Esc that sometimes close Black Ink has been removed.</li>
+              </ul>
+              </h4>
+              <hr />
+               <p>13 ноября 2013</p>
+              <h2>Black Ink 0.151.1634</h2>
+              <h4>list of changes :</h4>
+              <h4>
+              <ul>
+                
+                <li>New 7 new default brushes (Swarm, Follow Bubbles, Hard fur, Nasca Fan, Garland, Dot Aligned, Rake).</li>
+                <li>New Scatter parameter for brush parameters (even old default brushes have a scatter effect now)</li>
+                <li>New 2D vector operators for controllers</li>
+                <li>Fixed Glitch & Artefacts on AMD HD video of class 68xx, 79xx ( issue )</li>
+                <li>Black Ink try to recover now corrupted .BKD files at opening and not simply skip the loading of it.</li>
+                <li>When saving a .BKD Black Ink use now a temporary file and overwriting the current one after the creation is complete ( issue )</li>
+                <li>Coma is now a valid decimal mark for numeric input ( see )</li>
+                <li>Brush Default Stroke for preview has been updated to reflect new speed compute behavior.</li>
+                <li>All default brushes has been updated with a default Scatter behavior.</li>
+                    <div class="row">
+                    <div class="large-12 columns">
+                    <ul class="large-block-grid-3">
+                      <li> <%= image_tag("https://trello-attachments.s3.amazonaws.com/50bf3f4076a627ab3200a072/511268ae8a42fd2b2c0099d5/5361be82c81950dd8b71f3accef8e822/Clip.jpg") %></li> 
+                      <li><%= image_tag("https://trello-attachments.s3.amazonaws.com/50bf3f4076a627ab3200a072/511268ae8a42fd2b2c0099d5/442616a03b82153f9834d66b8301db80/Swarm.jpg") %></li>
+                      <li><%= image_tag("https://trello-attachments.s3.amazonaws.com/50bf3f4076a627ab3200a072/511268ae8a42fd2b2c0099d5/29d5aa9d27ded4150036f5ee7f5f6a1e/FollowBubbles.jpg") %></li>
+                      <li><%= image_tag("https://trello-attachments.s3.amazonaws.com/50bf3f4076a627ab3200a072/511268ae8a42fd2b2c0099d5/50b178d5f1d4e15571db80f490634070/Hard_Fur.jpg") %></li>
+                      <li><%= image_tag("https://trello-attachments.s3.amazonaws.com/50bf3f4076a627ab3200a072/511268ae8a42fd2b2c0099d5/2e48c8202913555b40e2ae858c37df95/Nasca_Fan.jpg") %></li>
+                      <li><%= image_tag("https://trello-attachments.s3.amazonaws.com/50bf3f4076a627ab3200a072/511268ae8a42fd2b2c0099d5/fbf86fd8c7d62ddf47d96210dd11aad2/Garland.jpg") %></li>
+                      <li><%= image_tag("https://trello-attachments.s3.amazonaws.com/50bf3f4076a627ab3200a072/511268ae8a42fd2b2c0099d5/9fa6613ac85127821e60ce6253a27924/rake.jpg") %></li>
+                       <li><%= image_tag("https://trello-attachments.s3.amazonaws.com/50bf3f4076a627ab3200a072/511268ae8a42fd2b2c0099d5/a710bf797e63e2e76c1e36edc9713d0d/dot_Aligned.jpg") %></li>
+                    </ul>
+                  </div>
+                 </div>
+              </ul>
+             </h4>
+        </div>
+<script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
 </html>

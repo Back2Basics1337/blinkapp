@@ -7,6 +7,7 @@ gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby', '3.1.2'
 gem 'carrierwave'
 gem 'mini_magick', '3.5.0'
+gem 'foundation-rails'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
@@ -34,4 +35,5 @@ end
 group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
+  gem 'rails_layout'
 end
