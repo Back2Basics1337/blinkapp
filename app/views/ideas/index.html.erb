@@ -2,35 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>jQuery UI Draggable - Default functionality</title>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.9.1.js"></script>
   <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <style>
-  #draggable { width: 150px; height: 150px; padding: 0.5em; }
-  </style>
-  <script>
+   <script>
   $(function() {
-    $( "#draggable" ).draggable();
+    $( "#accordion" ).accordion({
+      heightStyle: "content"
+    });
   });
   </script>
-
-  
 </head>
 <body>
-<div class=" hero-unit">
-<h1>Gallery</h1>
-<br> </br>
  
-<div id="draggable" class="ui-widget-content">
-  <p>Feel free to upload your own pictures, but do not destroy others one ; ) </p>
-</div>
- 
- 
-</body>
-
-<% @ideas.in_groups_of(3) do |group| %>
+<div id="accordion">
+  <h3>Read our rules</h3>
+  <div>
+     <ul>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+    </ul>
+  </div>
+  <h3>Gallery</h3>
+  <div>
+    <% @ideas.in_groups_of(2) do |group| %>
   <div class="row">
     <% group.compact.each do |idea| %>
       <div class="span4">
@@ -46,15 +46,15 @@
     <% end %>
   </div>
 <% end %>
-<br> </br>
-<div>
+  </div>
 </div>
  <div class="span2">
   <div style=" position:relative; top: 20px;">
 <%= link_to 'New picture', new_idea_path %>
  </div>
  </div>
-</div>
+
 
 
 </body>
+</html>
