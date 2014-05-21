@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" hash="1578429193">
-    <data-source source="LOCAL" name="Rails blink: development" product="SQLite" version="3.7.6.3" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="ad4187ed-4196-45c7-a4fd-fb48aa55ffb8">
+    <data-source source="LOCAL" name="Rails blink: development" uuid="ad4187ed-4196-45c7-a4fd-fb48aa55ffb8">
+      <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Sites\blink\db\development.sqlite3</jdbc-url>
       <libraries>
@@ -13,7 +14,8 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails blink: production" product="SQLite" version="3.7.6.3" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="c8176273-3566-42e9-972a-c514d305ea9d">
+    <data-source source="LOCAL" name="Rails blink: production" uuid="c8176273-3566-42e9-972a-c514d305ea9d">
+      <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Sites\blink\db\production.sqlite3</jdbc-url>
       <libraries>
@@ -24,6 +26,18 @@
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/sqlite-jdbc-3.7.6.3-20110609.081603-3.jar</url>
         </library>
       </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails blinkapp: development" uuid="fa96f3ca-e707-45ef-a7fd-ae8d16cfed14">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Sites\blinkapp\db\development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails blinkapp: test" uuid="143a2a64-7d0f-4537-8330-8ea0b72e22d4">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Sites\blinkapp\db\test.sqlite3</jdbc-url>
+      <libraries />
     </data-source>
   </component>
 </project>
